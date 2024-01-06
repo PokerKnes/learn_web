@@ -4,13 +4,14 @@
   "description": "learning web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node tests/nasa-feed-test.js",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "author": "Denis",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^1.6.5",
     "babel-eslint": "^10.1.0",
     "cssnano": "^4.1.11",
     "eslint": "^8.56.0",

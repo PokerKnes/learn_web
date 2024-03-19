@@ -1,0 +1,29 @@
+@import 'fonts/fonts';
+
+$font-color: black;
+
+html {
+  font-family: 'Montserrat';
+  color: $font-color;
+}
+
+.control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: -webkit-fill-available;
+  margin-bottom: 1rem;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+dialog {
+  width: 400px;
+  margin: 10rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 100;
+}

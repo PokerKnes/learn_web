@@ -10,6 +10,7 @@ module.exports = {
     path: path.join(__dirname, "dist"),
     filename: "index.[contenthash].js",
     assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -96,6 +97,7 @@ module.exports = {
     extensions: [".jsx", ".js"],
 },
   devServer: {
+    historyApiFallback: true,
     watchFiles: path.join(__dirname, "src"),
     port: 9000,
     open: {

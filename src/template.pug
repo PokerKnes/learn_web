@@ -3,6 +3,21 @@ html(lang= 'ru')
   head
     meta(charset='utf-8')
     title= 'Быстрый запуск Webpack'
+    //- style.
+    //-     button{
+    //-         width: 100px;
+    //-         height:30px;
+    //-         border-radius: 4px;
+    //-         margin:50px;
+    //-     }
+    //-     .on{
+    //-         color:#666;
+    //-         background-color: #ccc;
+    //-     }
+    //-     .off{
+    //-         color:#888;
+    //-         background-color: white;
+    //-     }
   body
     //- p Файл откомпилирован шаблонизатором Pug
     //- .logo-png
@@ -13,3 +28,40 @@ html(lang= 'ru')
     //- include:markdown-it /content/article.md
     #modal
     #root
+    //- button(id='unmountBtn') Unmount
+    //- #app
+    //- script(src="https://unpkg.com/react@18/umd/react.production.min.js")
+    //- script(src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js")
+    //- script(src="https://unpkg.com/@babel/standalone/babel.min.js")
+    //- script(type="text/babel").
+    //- import { useState, useEffect } from "react";
+    //- function User() {
+    //-   const [name, setName] = useState("Tom");
+    //-   const [age, setAge] = useState(36);
+        
+    //-   useEffect(()=> {
+    //-     document.title = `Привет ${name}`;  
+    //-     console.log("useEffect");
+    //-   });
+        
+    //-   const changeName = (event) => setName(event.target.value);
+    //-   const changeAge =(event) => setAge(event.target.value);
+       
+    //-   return (
+    //-     <div>
+    //-       <h3>Имя: {name}</h3>
+    //-       <h3>Возраст: {age}</h3>
+            
+    //-       <div>
+    //-         <p>Имя: <input type="text" value={name} onChange={changeName} /></p>
+    //-         <p>Возраст: <input type="number" value={age} onChange={changeAge} /></p>
+    //-       </div>
+    //-     </div>
+    //-   );
+    //- }
+             
+    //-  ReactDOM.createRoot(
+    //-     document.getElementById("app")
+    //- ).render(
+    //-     <User />
+    //- );
